@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "repository": "signed/jest-probe-reporter",
   "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit"
