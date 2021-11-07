@@ -6,6 +6,7 @@
   "repository": "signed/jest-probe-reporter",
   "license": "MIT",
   "files": [
+    "README.md",
     "dist",
     "src"
   ],
