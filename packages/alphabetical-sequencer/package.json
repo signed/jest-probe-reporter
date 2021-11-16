@@ -1,0 +1,31 @@
+{
+  "name": "@signed/jest-alphabetical-sequencer",
+  "version": "0.1.0",
+  "description": "Test sequencer to run tests in a defined deterministic order",
+  "main": "dist/index.js",
+  "repository": "signed/jest-probe-reporter",
+  "license": "MIT",
+  "files": [
+    "README.md",
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "jest",
+    "sequencer"
+  ],
+  "peerDependencies": {
+    "jest": ">= 24.x"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "jest": "27.3.1",
+    "rimraf": "3.0.2",
+    "typescript": "4.4.4"
+  }
+}
