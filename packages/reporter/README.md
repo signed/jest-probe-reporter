@@ -1,4 +1,4 @@
-# custom [jest reporter][jest-reporter]]
+# custom [jest reporter][jest-reporter]
 
 Intended for debugging test execution.
 The default reporter only logs test files after they are executed.
