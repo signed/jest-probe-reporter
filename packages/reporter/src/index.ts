@@ -1,6 +1,6 @@
-import type { Context, Reporter, ReporterOnStartOptions, Test } from '@jest/reporters';
+import type { TestContext, Reporter, ReporterOnStartOptions, Test } from '@jest/reporters';
 import type { AggregatedResult, TestResult } from '@jest/test-result';
-import { Config } from '@jest/types';
+import type { Config } from '@jest/types';
 
 class ProbeReporter implements Reporter {
   private _globalConfig: Config.GlobalConfig;
@@ -26,7 +26,7 @@ class ProbeReporter implements Reporter {
     return undefined;
   }
 
-  onRunComplete(_contexts: Set<Context>, _results: AggregatedResult): Promise<void> | void {
+  onRunComplete(_contexts: Set<TestContext>, _results: AggregatedResult): Promise<void> | void {
     // do nothing for now
     return undefined;
   }
